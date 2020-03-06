@@ -6,23 +6,19 @@ using System.Threading.Tasks;
 
 namespace RadioButtonApp
 {
-    class Kwadrat
+    class Kwadrat : Prostokat
     {
-        private double Bok;
+        
 
-        public Kwadrat(double bok)
+        public Kwadrat(double bok1)
         {
-            this.Bok = bok;
+            Bok1 = bok1;
+            Bok2 = bok1;
         }
 
-        public double Pole()
+        public override double LiczPole()
         {
-            return Math.Pow(this.Bok, 2);
-        }
-
-        public double Obwod()
-        {
-            return this.Bok + this.Bok;
+            return Math.Pow(Bok1, 2);
         }
     }
 }

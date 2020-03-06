@@ -31,7 +31,7 @@
             this.Figury = new System.Windows.Forms.GroupBox();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.Figura_Prostokat = new System.Windows.Forms.RadioButton();
             this.Figura_Szescian = new System.Windows.Forms.RadioButton();
             this.Figura_kwadrat = new System.Windows.Forms.RadioButton();
             this.Obliczenia = new System.Windows.Forms.GroupBox();
@@ -56,7 +56,7 @@
             // 
             this.Figury.Controls.Add(this.radioButton5);
             this.Figury.Controls.Add(this.radioButton4);
-            this.Figury.Controls.Add(this.radioButton3);
+            this.Figury.Controls.Add(this.Figura_Prostokat);
             this.Figury.Controls.Add(this.Figura_Szescian);
             this.Figury.Controls.Add(this.Figura_kwadrat);
             this.Figury.Location = new System.Drawing.Point(12, 12);
@@ -88,16 +88,17 @@
             this.radioButton4.Text = "radioButton4";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // Figura_Prostokat
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 68);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.Figura_Prostokat.AutoSize = true;
+            this.Figura_Prostokat.Location = new System.Drawing.Point(7, 68);
+            this.Figura_Prostokat.Name = "Figura_Prostokat";
+            this.Figura_Prostokat.Size = new System.Drawing.Size(70, 17);
+            this.Figura_Prostokat.TabIndex = 2;
+            this.Figura_Prostokat.TabStop = true;
+            this.Figura_Prostokat.Text = "Prostokąt";
+            this.Figura_Prostokat.UseVisualStyleBackColor = true;
+            this.Figura_Prostokat.CheckedChanged += new System.EventHandler(this.Figura_Prostokat_CheckedChanged);
             // 
             // Figura_Szescian
             // 
@@ -109,6 +110,7 @@
             this.Figura_Szescian.TabStop = true;
             this.Figura_Szescian.Text = "Sześcian";
             this.Figura_Szescian.UseVisualStyleBackColor = true;
+            this.Figura_Szescian.CheckedChanged += new System.EventHandler(this.Figura_Szescian_CheckedChanged);
             // 
             // Figura_kwadrat
             // 
@@ -167,6 +169,7 @@
             this.LiczObwod.TabStop = true;
             this.LiczObwod.Text = "Obwód";
             this.LiczObwod.UseVisualStyleBackColor = true;
+            this.LiczObwod.CheckedChanged += new System.EventHandler(this.LiczObwod_CheckedChanged);
             // 
             // LiczPole
             // 
@@ -277,7 +280,7 @@
         private System.Windows.Forms.GroupBox Figury;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton Figura_Prostokat;
         private System.Windows.Forms.RadioButton Figura_Szescian;
         private System.Windows.Forms.RadioButton Figura_kwadrat;
         private System.Windows.Forms.GroupBox Obliczenia;
